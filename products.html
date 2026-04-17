@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - APN Food Products</title>
+    <meta name="description"
+        content="Browse our complete collection of authentic homemade masala, pickles, and food products. 100% pure and premium quality.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/APNLOGO.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">APN</span> Food Products
+            </a>
+            <ul class="nav-links">
+                <!-- <li><a href="index.html#categories">Categories</a></li> -->
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-btn">Contact Us</a></li>
+                <li><button id="cart-btn" class="cart-icon-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M7 4V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h5V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h2a1 1 0 0 1 1 1v2H2V5a1 1 0 0 1 1-1h4zm13 5H2v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9z"/>
+                    </svg>
+                    <span id="cart-badge" class="cart-badge">0</span>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header section">
+        <div class="container">
+            <h1 class="page-title">Our Products</h1>
+            <p class="page-subtitle">Discover our complete range of authentic homemade food products</p>
+            <div class="page-header-buttons">
+                <button class="whatsapp-button" onclick="openWhatsApp()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                    </svg>
+                    Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="categories" class="categories section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="scrollToProducts('masala')">
+                    <div class="cat-image placeholder-masala"></div>
+                    <h3>Masalas</h3>
+                </div>
+                <div class="category-card" onclick="scrollToProducts('pickle')">
+                    <div class="cat-image placeholder-pickle"></div>
+                    <h3>Pickles</h3>
+                </div>
+                <div class="category-card" onclick="scrollToProducts('other')">
+                    <div class="cat-image placeholder-snacks"></div>
+                    <h3>Others</h3>
+                </div>
+                <!-- <div class="category-card" onclick="scrollToProducts('combo')">
+                    <div class="cat-image placeholder-combo"></div>
+                    <h3>Combo Packs</h3>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Masala Section -->
+    <section id="masala-section" class="products section bg-light">
+        <div class="container">
+            <h2 class="section-title">Masalas</h2>
+            <div class="product-grid">
+                <!-- Product 5 -->
+              
+                 <div class="product-card" data-category="masala">
+                    <div class="product-image-container">
+                        <img src="images/biriyani masala.png" alt="Biriyani Masala" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Biriyani Masala - 200g</h3>
+                        <p class="price">₹120</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Biriyani Masala (200g)" data-price="120">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Biriyani Masala (200g)" data-price="120">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                  <div class="product-card" data-category="masala">
+                    <div class="product-image-container">
+                        <img src="images/madhooth masala.png" alt="Madhooth Masala" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Madhooth Masala - 200g</h3>
+                        <p class="price">₹120</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Madhooth Masala (200g)" data-price="120">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Madhooth Masala (200g)" data-price="120">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-card" data-category="masala">
+                    <div class="product-image-container">
+                        <img src="images/hydrabad biriyani masala.png" alt="Hydrabad Biriyani Masala" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrabad Biriyani Masala - 200g</h3>
+                        <p class="price">₹120</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Hydrabad Biriyani Masala (200g)" data-price="120">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Hydrabad Biriyani Masala (200g)" data-price="120">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="masala">
+                    <div class="product-image-container">
+                        <img src="images/mandhi masala.png" alt="Mandhi Masala" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mandhi Masala - 200g</h3>
+                        <p class="price">₹120</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Mandhi Masala (200g)" data-price="120">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Mandhi Masala (200g)" data-price="120">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-card" data-category="masala">
+                    <div class="product-image-container">
+                        <img src="images/multipurpuse masala.png" alt="Multipurpose Masala" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Multipurpose Masala - 200g</h3>
+                        <p class="price">₹120</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Multipurpose Masala (200g)" data-price="120">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Multipurpose Masala (200g)" data-price="120">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="product-card" data-category="masala">
+                    <div class="product-image-container">
+                        <img src="images/majboos masala.png" alt="Majboos Masala" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Majboos Masala - 200g</h3>
+                        <p class="price">₹120</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Majboos Masala (200g)" data-price="120">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Majboos Masala (200g)" data-price="120">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pickle Section -->
+    <section id="pickle-section" class="products section bg-light">
+        <div class="container">
+            <h2 class="section-title">Pickles</h2>
+            <div class="product-grid">
+                <!-- Product 2 -->
+                <div class="product-card" data-category="pickle">
+                    <div class="product-image-container">
+                        <img src="images/beef pickle.png" alt="Beef Pickle" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Beef Pickle (NAS Pickles) - 250g</h3>
+                        <p class="price">₹199</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Beef Pickle (250g)" data-price="199">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Beef Pickle (250g)" data-price="199">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pickle">
+                    <div class="product-image-container">
+                        <img src="images/chilli pickle.png" alt="Chilli Pickle" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Green Chilli Pickle - 250g</h3>
+                        <p class="price">₹199</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Chilli Pickle (250g)" data-price="199">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Chilli Pickle (250g)" data-price="199">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pickle">
+                    <div class="product-image-container">
+                        <img src="images/fish pickle.png" alt="Fish Pickle" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fish Pickle (NAS Pickles) - 250g</h3>
+                        <p class="price">₹199</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Fish Pickle (250g)" data-price="199">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Fish Pickle (250g)" data-price="199">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pickle">
+                    <div class="product-image-container">
+                        <img src="images/garlic pickle.png" alt="Garlic Pickle" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Garlic Pickle (NAS Pickles) - 250g</h3>
+                        <p class="price">₹199</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Garlic Pickle (250g)" data-price="199">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Garlic Pickle (250g)" data-price="199">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pickle">
+                    <div class="product-image-container">
+                        <img src="images/mango pickle.png" alt="Mango Pickle" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cut Mango Pickle (NAS Pickles) - 250g</h3>
+                        <p class="price">₹199</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Mango Pickle (250g)" data-price="199">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Mango Pickle (250g)" data-price="199">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="pickle">
+                    <div class="product-image-container">
+                        <img src="images/lemon pickle.png" alt="Lemon Pickle" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lemon & Dates Pickle - 500g</h3>
+                        <p class="price">₹150</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Lemon Pickle (500g)" data-price="150">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Lemon Pickle (500g)" data-price="150">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <!-- <div class="product-card" data-category="pickle">
+                    <div class="product-image-container">
+                        <img src="images/fish-pickle.jpg.png" alt="Fish Pickle" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fish Pickle (NAS Magic) - 500g</h3>
+                        <p class="price">₹250</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Fish Pickle (500g)" data-price="250">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Fish Pickle (500g)" data-price="250">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Section -->
+    <section id="other-section" class="products section bg-light">
+        <div class="container">
+            <h2 class="section-title">Other</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="other">
+                    <div class="product-image-container">
+                        <img src="images/fried onion.png" alt="Fried Onion" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fried Onion (Salt Free) - 100g</h3>
+                        <p class="price">₹80</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Fried Onion (100g)" data-price="80">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Fried Onion (100g)" data-price="80">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="other">
+                    <div class="product-image-container">
+                        <img src="images/kayam.png" alt="Fried Onion" class="product-image-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Compound Asafoetida Powder- 100g</h3>
+                        <p class="price">₹80</p>
+                        <div class="quantity-selector">
+                            <label class="quantity-label">Qty:</label>
+                            <button class="qty-btn qty-minus">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="add-to-cart-btn" data-product="Fried Onion (100g)" data-price="80">
+                                Add to Cart
+                            </button>
+                            <button class="buy-btn" data-product="Fried Onion (100g)" data-price="80">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <!-- <section id="videos" class="videos section bg-light">
+        <div class="container">
+            <h2 class="section-title">Making</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-frame">
+                        <video controls preload="metadata" poster="images/review-poster.jpg">
+                            <source src="videos/review.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                    </div> -->
+                    <!-- <h3>Customer Review Video</h3> -->
+                    <!-- <p>Hear from real customers who love the flavor, quality, and authenticity of our homemade products.</p> -->
+                <!-- </div>
+                <div class="video-card">
+                    <div class="video-frame">
+                        <video controls preload="metadata" poster="images/making-poster.jpg">
+                            <source src="videos/making.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                    </div> -->
+                    <!-- <h3>Making Video</h3> -->
+                    <!-- <p>Watch the behind-the-scenes process of how we craft every product using traditional techniques.</p> -->
+                <!-- </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <!-- <img src="images/APNLOGO.png" alt="APN Food Products logo" class="footer-logo"> -->
+                <div>
+                    <h2>APN Food Products</h2>
+                    <p>Bringing traditional flavors straight to your home.</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><a href="https://www.google.com/maps/dir//APN+Food+Products,+Muthuvathuparamb,+Hajiyarpalli,+Malappuram,+Kerala+676519/@11.0618617,76.0683918,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba64bfba6f7ad1b:0x77f1a30d99686fdb!2m2!1d76.0518251!2d11.0556055?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D">📍 Hajiarpalli, Malappuram</a></p>
+                <p><a href="tel:+919605235235">📞+91 96052 35235</a></p>
+                <p><a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJNwfgJMrdXgJQDkzxPkQDlxFsvLsGTfNDTNkTlcwPzHsQhSkngqkVsmRfTwFlDlJkxtzNq">✉️ apnfoodproducts@gmail.com</a></p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="products.html">Products</a>
+                <a href="#about">About Us</a>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1851asySGu/" target="_blank" title="Facebook">
+                        <svg xmlns="" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/apnfoodproducts?igsh=MXh5aG15aHpnNXl1Yw==" target="_blank" title="Instagram">
+                        <svg xmlns="" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12.017 0C8.396 0 7.996.014 6.79.067 5.584.12 4.775.302 4.082.566c-.726.28-1.337.69-1.948 1.3C1.523 2.477 1.113 3.088.833 3.814c-.264.693-.446 1.502-.5 2.708C.28 7.728.267 8.128.267 11.749s.014 3.996.067 5.202c.054 1.206.236 2.015.5 2.708.28.726.69 1.337 1.3 1.948.611.611 1.222 1.021 1.948 1.3.693.264 1.502.446 2.708.5C7.996 23.72 8.396 23.733 12.017 23.733s3.996-.014 5.202-.067c1.206-.054 2.015-.236 2.708-.5.726-.28 1.337-.69 1.948-1.3.611-.611 1.021-1.222 1.3-1.948.264-.693.446-1.502.5-2.708.053-1.206.067-1.606.067-5.227s-.014-3.996-.067-5.202c-.054-1.206-.236-2.015-.5-2.708-.28-.726-.69-1.337-1.3-1.948-.611-.611-1.222-1.021-1.948-1.3-.693-.264-1.502-.446-2.708-.5C15.996.28 15.596.267 12.017.267zm0 2.15c3.588 0 4.008.014 5.413.078 1.296.06 1.994.276 2.46.46.6.24 1.026.56 1.476.996.45.44.716.876.996 1.476.184.466.4 1.164.46 2.46.064 1.405.078 1.825.078 5.413s-.014 4.008-.078 5.413c-.06 1.296-.276 1.994-.46 2.46-.24.6-.56 1.026-.996 1.476-.44.45-.876.716-1.476.996-.466.184-1.164.4-2.46.46-1.405.064-1.825.078-5.413.078s-4.008-.014-5.413-.078c-1.296-.06-1.994-.276-2.46-.46-.6-.24-1.026-.56-1.476-.996-.45-.44-.716-.876-.996-1.476-.184-.466-.4-1.164-.46-2.46C2.15 15.825 2.136 15.405 2.136 11.817s.014-4.008.078-5.413c.06-1.296.276-1.994.46-2.46.24-.6.56-1.026.996-1.476.44-.45.876-.716 1.476-.996.466-.184 1.164-.4 2.46-.46 1.405-.064 1.825-.078 5.413-.078zm0 3.675a6.092 6.092 0 1 0 0 12.184 6.092 6.092 0 0 0 0-12.184zm0 10.034a3.942 3.942 0 1 1 0-7.884 3.942 3.942 0 0 0 0 7.884zm6.406-10.77a1.42 1.42 0 1 1-2.84 0 1.42 1.42 0 0 1 2.84 0z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919605235235" target="_blank" title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@nasinnovations7736" target="_blank" title="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 APN Food Products. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button id="close-cart" class="close-cart-btn">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items"></div>
+            <div id="cart-empty" class="cart-empty">
+                <p>Your cart is empty</p>
+                <p class="cart-empty-sub">Add items to get started</p>
+            </div>
+            <div id="cart-summary" class="cart-summary" style="display: none;">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">₹0</span>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="#" id="wa-sticky" class="wa-sticky-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Category filtering function
+        function scrollToProducts(category) {
+            let sectionId;
+            if (category === 'masala') {
+                sectionId = 'masala-section';
+            } else if (category === 'pickle') {
+                sectionId = 'pickle-section';
+            } else if (category === 'other') {
+                sectionId = 'other-section';
+            } else {
+                sectionId = 'masala-section'; // default
+            }
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            // Optional: Add visual feedback for category selection
+            const categoryCards = document.querySelectorAll('.category-card');
+            categoryCards.forEach(card => card.classList.remove('active'));
+            event.target.closest('.category-card').classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
