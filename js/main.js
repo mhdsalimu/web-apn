@@ -246,6 +246,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Mobile Hamburger Menu Logic
+    const hamburger = document.getElementById('hamburger');
+    const navLinksList = document.querySelector('.nav-links');
+    
+    if (hamburger && navLinksList) {
+        hamburger.addEventListener('click', () => {
+            navLinksList.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link
+        const navItems = navLinksList.querySelectorAll('a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinksList.classList.remove('active');
+            });
+        });
+    }
+
     // 7. Hero Slider logic
     const slides = document.querySelectorAll('.slide');
     const prevBtn = document.querySelector('.prev-btn');
