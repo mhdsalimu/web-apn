@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APN Food Products - Authentic Taste, Delivered to Your Door</title>
+    <title>APN Food Products</title>
     <meta name="description"
         content="Order your favorite APN homemade masala, pickles, and food products instantly. 100% pure and premium quality.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="images/APNLOGO.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -24,21 +25,23 @@
                 <span class="logo-text">APN</span> Food Products
             </a>
             <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact" class="nav-btn">Contact Us</a></li>
             </ul>
             <div class="nav-actions">
                 <button id="cart-btn" class="cart-icon-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                        <path d="M7 4V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h5V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h2a1 1 0 0 1 1 1v2H2V5a1 1 0 0 1 1-1h4zm13 5H2v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        fill="currentColor">
+                        <path d="M7 18c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
                     </svg>
                     <span id="cart-badge" class="cart-badge">0</span>
                 </button>
-                <button class="hamburger" id="hamburger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                        <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/>
-                    </svg>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </button>
             </div>
         </div>
@@ -52,10 +55,10 @@
             <div class="slide active">
                 <div class="container hero-split">
                     <div class="hero-text-content">
-                        <h1>Authentic Arabian Taste</h1>
+                        <h1>The Soul of Authentic Biryani</h1>
                         <p>Experience the royal aroma with our Biriyani Masala.</p>
                         <div class="hero-buttons">
-                            <button class="cta-button" onclick="window.location.href='products.html'">Order Now</button>
+                            <button class="cta-button" onclick="window.location.href='products.html#masala'">Order Now</button>
                         </div>
                     </div>
                     <div class="hero-image-content">
@@ -70,7 +73,7 @@
                         <h1>100% Natural Kerala Style</h1>
                         <p>Savor the homemade goodness of Beef Pickle.</p>
                         <div class="hero-buttons">
-                            <button class="cta-button" onclick="window.location.href='products.html'">Order Now</button>
+                            <button class="cta-button" onclick="window.location.href='products.html#pickle'">Order Now</button>
                         </div>
                     </div>
                     <div class="hero-image-content">
@@ -85,7 +88,7 @@
                         <h1>Crispy & Golden</h1>
                         <p>Perfect fried onions for Biryani & other dishes.</p>
                         <div class="hero-buttons">
-                            <button class="cta-button" onclick="window.location.href='products.html'">Order Now</button>
+                            <button class="cta-button" onclick="window.location.href='products.html#other'">Order Now</button>
                         </div>
                     </div>
                     <div class="hero-image-content">
@@ -117,62 +120,86 @@
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
-            <div class="about-content">
+            <div class="about-content reveal">
                 <div class="about-text">
                     <h2>Our Story</h2>
-                    <p>APN Food Products was founded by <i>Abdul Naser AP</i> with a simple vision to bring authentic, homemade taste to every household. What started as a passion for creating traditional flavors has grown into a brand that delivers quality, trust, and consistency.
-All our products are made from our own carefully crafted recipes, developed through experience, dedication, and a love for food. We focus on preserving the original taste while maintaining high standards of hygiene and quality.
-At APN, every product reflects our commitment to freshness and authenticity. From sourcing ingredients to final packaging, we ensure that what reaches you is something we proudly make for our own family.
-</p>
-<p>Our journey is driven by one goal —
-to serve real taste, made with care.</p>
+                    <p>APN Food Products was founded by <i>Abdul Naser AP</i> with a simple vision to bring authentic,
+                        homemade taste to every household. What started as a passion for creating traditional flavors
+                        has grown into a brand that delivers quality, trust, and consistency.
+                        All our products are made from our own carefully crafted recipes, developed through experience,
+                        dedication, and a love for food. We focus on preserving the original taste while maintaining
+                        high standards of hygiene and quality.
+                        At APN, every product reflects our commitment to freshness and authenticity. From sourcing
+                        ingredients to final packaging, we ensure that what reaches you is something we proudly make for
+                        our own family.
+                    </p>
+                    <p>Our journey is driven by one goal —
+                        to serve real taste, made with care.</p>
                 </div>
                 <div class="about-image">
                     <img src="images/FOUNDER.png" alt="Founder" class="founder-img">
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Video Section -->
-    <!-- <section id="videos" class="videos section bg-light">
+    </section>    <!-- Video Review Section -->
+    <section id="reviews" class="video-reel-section">
         <div class="container">
-            <h2 class="section-title">Reviews</h2>
-            <div class="video-grid">
-                <div class="video-card">
-                    <div class="video-frame reel-frame">
-                        <iframe src="https://www.instagram.com/reel/DWtpKeTTiNE/embed" frameborder="0" allowtransparency="true" allow="autoplay; encrypted-media" title="APN Food Review Reel"></iframe>
+            <h2 class="section-title reveal">Customer Stories</h2>
+            <div class="reel-wrapper">
+                <div class="reel-controls">
+                    <button class="reel-btn prev" onclick="scrollReel(-1)">&#10094;</button>
+                    <button class="reel-btn next" onclick="scrollReel(1)">&#10095;</button>
+                </div>
+                <div class="video-reel-slider reveal">
+                <!-- Set 1 -->
+                <div class="video-reel-card">
+                    <video src="review/review1.mp4#t=0.001" loop onclick="togglePlay(this)"></video>
+                    <div class="video-overlay-info">
+                        <h4>Excellent Quality</h4>
+                        <p>Verified Customer</p>
                     </div>
                 </div>
-                <div class="video-card">
-                    <div class="video-frame reel-frame">
-                        <iframe src="https://www.instagram.com/reel/DWDA2c8E2yz/embed" frameborder="0" allowtransparency="true" allow="autoplay; encrypted-media" title="APN Food Review Reel"></iframe>
+                <div class="video-reel-card">
+                    <video src="review/review2.mp4#t=0.001" loop onclick="togglePlay(this)"></video>
+                    <div class="video-overlay-info">
+                        <h4>Amazing Taste</h4>
+                        <p>Verified Customer</p>
+                    </div>
+                </div>
+                <div class="video-reel-card">
+                    <video src="review/review3.mp4#t=0.001" loop onclick="togglePlay(this)"></video>
+                    <div class="video-overlay-info">
+                        <h4>Highly Recommended</h4>
+                        <p>Verified Customer</p>
+                    </div>
+                </div>
+                
+                <!-- Set 2 (Duplicate for loop) -->
+                <div class="video-reel-card">
+                    <video src="review/review1.mp4#t=0.001" loop onclick="togglePlay(this)"></video>
+                    <div class="video-overlay-info">
+                        <h4>Excellent Quality</h4>
+                        <p>Verified Customer</p>
+                    </div>
+                </div>
+                <div class="video-reel-card">
+                    <video src="review/review2.mp4#t=0.001" loop onclick="togglePlay(this)"></video>
+                    <div class="video-overlay-info">
+                        <h4>Amazing Taste</h4>
+                        <p>Verified Customer</p>
+                    </div>
+                </div>
+                <div class="video-reel-card">
+                    <video src="review/review3.mp4#t=0.001" loop onclick="togglePlay(this)"></video>
+                    <div class="video-overlay-info">
+                        <h4>Highly Recommended</h4>
+                        <p>Verified Customer</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-
-    <!-- Reviews Section -->
-    <section class="reviews section bg-light">
-        <div class="container">
-            <h2 class="section-title">What Our Customers Say</h2>
-            <div class="review-grid">
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"The Chicken Masala is incredibly authentic. Reminds me of my grandmother's cooking. Packaging
-                        was great too!"</p>
-                    <h4>- Priya S.</h4>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I ordered the Mango Pickle and some snacks. Delivered quickly within two days on WhatsApp. The
-                        taste is outstanding."</p>
-                    <h4>- Rahul T.</h4>
-                </div>
-            </div>
-        </div>
     </section>
+
 
     <!-- Footer -->
     <footer id="contact" class="footer">
@@ -186,12 +213,17 @@ to serve real taste, made with care.</p>
             </div>
             <div class="footer-contact">
                 <h3>Contact Us</h3>
-                <p><a href="https://www.google.com/maps/dir//APN+Food+Products,+Muthuvathuparamb,+Hajiyarpalli,+Malappuram,+Kerala+676519/@11.0618617,76.0683918,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba64bfba6f7ad1b:0x77f1a30d99686fdb!2m2!1d76.0518251!2d11.0556055?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D">📍 Hajiarpalli, Malappuram</a></p>
+                <p><a
+                        href="https://www.google.com/maps/dir//APN+Food+Products,+Muthuvathuparamb,+Hajiyarpalli,+Malappuram,+Kerala+676519/@11.0618617,76.0683918,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba64bfba6f7ad1b:0x77f1a30d99686fdb!2m2!1d76.0518251!2d11.0556055?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D">📍
+                        Hajiyarpalli, Malappuram</a></p>
                 <p><a href="tel:+919605235235">📞+91 96052 35235</a></p>
-                <p><a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJNwfgJMrdXgJQDkzxPkQDlxFsvLsGTfNDTNkTlcwPzHsQhSkngqkVsmRfTwFlDlJkxtzNq">✉️ apnfoodproducts@gmail.com</a></p>
+                <p><a
+                        href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJNwfgJMrdXgJQDkzxPkQDlxFsvLsGTfNDTNkTlcwPzHsQhSkngqkVsmRfTwFlDlJkxtzNq">✉️
+                        apnfoodproducts@gmail.com</a></p>
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
                 <a href="products.html">Products</a>
                 <a href="#about">About Us</a>
             </div>
@@ -200,22 +232,29 @@ to serve real taste, made with care.</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/share/1851asySGu/" target="_blank" title="Facebook">
                         <svg xmlns="" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                         </svg>
                     </a>
-                    <a href="https://www.instagram.com/apnfoodproducts?igsh=MXh5aG15aHpnNXl1Yw==" target="_blank" title="Instagram">
+                    <a href="https://www.instagram.com/apnfoodproducts?igsh=MXh5aG15aHpnNXl1Yw==" target="_blank"
+                        title="Instagram">
                         <svg xmlns="" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                            <path d="M12.017 0C8.396 0 7.996.014 6.79.067 5.584.12 4.775.302 4.082.566c-.726.28-1.337.69-1.948 1.3C1.523 2.477 1.113 3.088.833 3.814c-.264.693-.446 1.502-.5 2.708C.28 7.728.267 8.128.267 11.749s.014 3.996.067 5.202c.054 1.206.236 2.015.5 2.708.28.726.69 1.337 1.3 1.948.611.611 1.222 1.021 1.948 1.3.693.264 1.502.446 2.708.5C7.996 23.72 8.396 23.733 12.017 23.733s3.996-.014 5.202-.067c1.206-.054 2.015-.236 2.708-.5.726-.28 1.337-.69 1.948-1.3.611-.611 1.021-1.222 1.3-1.948.264-.693.446-1.502.5-2.708.053-1.206.067-1.606.067-5.227s-.014-3.996-.067-5.202c-.054-1.206-.236-2.015-.5-2.708-.28-.726-.69-1.337-1.3-1.948-.611-.611-1.222-1.021-1.948-1.3-.693-.264-1.502-.446-2.708-.5C15.996.28 15.596.267 12.017.267zm0 2.15c3.588 0 4.008.014 5.413.078 1.296.06 1.994.276 2.46.46.6.24 1.026.56 1.476.996.45.44.716.876.996 1.476.184.466.4 1.164.46 2.46.064 1.405.078 1.825.078 5.413s-.014 4.008-.078 5.413c-.06 1.296-.276 1.994-.46 2.46-.24.6-.56 1.026-.996 1.476-.44.45-.876.716-1.476.996-.466.184-1.164.4-2.46.46-1.405.064-1.825.078-5.413.078s-4.008-.014-5.413-.078c-1.296-.06-1.994-.276-2.46-.46-.6-.24-1.026-.56-1.476-.996-.45-.44-.716-.876-.996-1.476-.184-.466-.4-1.164-.46-2.46C2.15 15.825 2.136 15.405 2.136 11.817s.014-4.008.078-5.413c.06-1.296.276-1.994.46-2.46.24-.6.56-1.026.996-1.476.44-.45.876-.716 1.476-.996.466-.184 1.164-.4 2.46-.46 1.405-.064 1.825-.078 5.413-.078zm0 3.675a6.092 6.092 0 1 0 0 12.184 6.092 6.092 0 0 0 0-12.184zm0 10.034a3.942 3.942 0 1 1 0-7.884 3.942 3.942 0 0 0 0 7.884zm6.406-10.77a1.42 1.42 0 1 1-2.84 0 1.42 1.42 0 0 1 2.84 0z"/>
+                            <path
+                                d="M12.017 0C8.396 0 7.996.014 6.79.067 5.584.12 4.775.302 4.082.566c-.726.28-1.337.69-1.948 1.3C1.523 2.477 1.113 3.088.833 3.814c-.264.693-.446 1.502-.5 2.708C.28 7.728.267 8.128.267 11.749s.014 3.996.067 5.202c.054 1.206.236 2.015.5 2.708.28.726.69 1.337 1.3 1.948.611.611 1.222 1.021 1.948 1.3.693.264 1.502.446 2.708.5C7.996 23.72 8.396 23.733 12.017 23.733s3.996-.014 5.202-.067c1.206-.054 2.015-.236 2.708-.5.726-.28 1.337-.69 1.948-1.3.611-.611 1.021-1.222 1.3-1.948.264-.693.446-1.502.5-2.708.053-1.206.067-1.606.067-5.227s-.014-3.996-.067-5.202c-.054-1.206-.236-2.015-.5-2.708-.28-.726-.69-1.337-1.3-1.948-.611-.611-1.222-1.021-1.948-1.3-.693-.264-1.502-.446-2.708-.5C15.996.28 15.596.267 12.017.267zm0 2.15c3.588 0 4.008.014 5.413.078 1.296.06 1.994.276 2.46.46.6.24 1.026.56 1.476.996.45.44.716.876.996 1.476.184.466.4 1.164.46 2.46.064 1.405.078 1.825.078 5.413s-.014 4.008-.078 5.413c-.06 1.296-.276 1.994-.46 2.46-.24.6-.56 1.026-.996 1.476-.44.45-.876.716-1.476.996-.466.184-1.164.4-2.46.46-1.405.064-1.825.078-5.413.078s-4.008-.014-5.413-.078c-1.296-.06-1.994-.276-2.46-.46-.6-.24-1.026-.56-1.476-.996-.45-.44-.716-.876-.996-1.476-.184-.466-.4-1.164-.46-2.46C2.15 15.825 2.136 15.405 2.136 11.817s.014-4.008.078-5.413c.06-1.296.276-1.994.46-2.46.24-.6.56-1.026.996-1.476.44-.45.876-.716 1.476-.996.466-.184 1.164-.4 2.46-.46 1.405-.064 1.825-.078 5.413-.078zm0 3.675a6.092 6.092 0 1 0 0 12.184 6.092 6.092 0 0 0 0-12.184zm0 10.034a3.942 3.942 0 1 1 0-7.884 3.942 3.942 0 0 0 0 7.884zm6.406-10.77a1.42 1.42 0 1 1-2.84 0 1.42 1.42 0 0 1 2.84 0z" />
                         </svg>
                     </a>
                     <a href="https://wa.me/919605235235" target="_blank" title="WhatsApp">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
                         </svg>
                     </a>
                     <a href="https://www.youtube.com/@nasinnovations7736" target="_blank" title="YouTube">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
                     </a>
                 </div>
@@ -239,12 +278,84 @@ to serve real taste, made with care.</p>
                 <p class="cart-empty-sub">Add items to get started</p>
             </div>
             <div id="cart-summary" class="cart-summary" style="display: none;">
-                <div class="cart-total">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">₹0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="cart-shipping">₹0</span>
+                </div>
+                <div class="summary-row total-row">
                     <span>Total:</span>
                     <span id="cart-total-price">₹0</span>
                 </div>
+                <p class="shipping-info-text">*Free shipping on orders of 3 or more items.</p>
                 <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>Checkout</h2>
+                <button id="close-checkout" class="close-cart-btn">&times;</button>
+            </div>
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-section">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile-number">Mobile Number</label>
+                        <input type="tel" id="mobile-number" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Delivery Address</h3>
+                    <div class="form-group">
+                        <label for="address">Address (House No, Street, Area)</label>
+                        <textarea id="address" placeholder="Enter your complete address" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Enter your city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="Enter your state" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" id="pincode" placeholder="6-digit pincode" pattern="[0-9]{6}" required>
+                    </div>
+                </div>
+
+                <div class="order-summary-box">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Cart Subtotal:</span>
+                        <span id="checkout-subtotal">Rs. 0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="checkout-shipping" class="free-shipping">FREE</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total Amount:</span>
+                        <span id="checkout-total">Rs. 0.00</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
         </div>
     </div>
 
