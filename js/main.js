@@ -499,6 +499,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // 11. Video Reel Controls (Play/Pause & Animation Toggle)
     const reelSlider = document.querySelector('.video-reel-slider');
     
+    // Ensure video previews are visible (Fix for black thumbnails)
+    const initVideoPreviews = () => {
+        const videos = document.querySelectorAll('.video-reel-card video');
+        videos.forEach(v => {
+            v.addEventListener('loadeddata', () => {
+                v.currentTime = 0.1;
+            });
+            // If video is already partially loaded
+            if (v.readyState >= 2) {
+                v.currentTime = 0.1;
+            }
+        });
+    };
+    initVideoPreviews();
+
     window.togglePlay = (video) => {
         if (!reelSlider) return;
         
