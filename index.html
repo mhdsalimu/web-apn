@@ -28,7 +28,7 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact" class="nav-btn">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="nav-actions">
                 <button id="cart-btn" class="cart-icon-btn">
@@ -368,6 +368,48 @@
             </form>
         </div>
     </div>
+
+    <!-- Quick View Modal -->
+    <div id="quickview-modal" class="quickview-modal">
+        <div class="quickview-content">
+            <button class="close-quickview" id="close-quickview">&times;</button>
+            <div class="quickview-split">
+                <div class="quickview-image-container">
+                    <img id="qv-image" src="" alt="Product Image">
+                </div>
+                <div class="quickview-details">
+                    <h2 id="qv-title">Product Title</h2>
+                    <p id="qv-description" class="qv-description"></p>
+                    <p class="qv-price" id="qv-price">₹0</p>
+                    <p class="qv-shipping">+ ₹50 Shipping <span class="free-shipping">(Free on 3+ items)</span></p>
+
+                    <div class="qv-specs">
+                        <h3>Product Specifications</h3>
+                        <ul id="qv-specs-list">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+
+                    <div class="quantity-selector qv-qty-selector">
+                        <label class="quantity-label">Qty:</label>
+                        <button class="qty-btn" id="qv-qty-minus">−</button>
+                        <span class="qty-display" id="qv-qty-display">1</span>
+                        <button class="qty-btn" id="qv-qty-plus">+</button>
+                    </div>
+
+                    <div class="product-buttons qv-buttons">
+                        <button class="add-to-cart-btn" id="qv-add-to-cart" data-product="" data-price="">
+                            Add to Cart
+                        </button>
+                        <button class="buy-btn" id="qv-buy-now" data-product="" data-price="">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="quickview-overlay" class="quickview-overlay"></div>
 
     <!-- Cart Overlay -->
     <div id="cart-overlay" class="cart-overlay"></div>
